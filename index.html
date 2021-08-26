@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Henry Lambs portfolio
+        </title>
+        <link href="./style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body, height =882px, width = 400px>
+    <!--About section-->
+        <header>
+            <div class="henrysection">
+            <h1>Henry Lamb</h1>
+        </div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=440px, height= 882px, user-scalable=no">
+        <nav class="topnav" id="portfolioTopnav">
+            <a href="#About">About</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Accomplishments">Accomplishments</a>
+            <a href="#Contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="openMenu()"><i class="fa fa-bars"></i></a>
+        </nav>
+        </header>
+        <main>
+        <div id="aboutsection">
+        <figure>
+        <a href="https://research.qut.edu.au/ptmbrg/people/" target="_blank"> 
+        <img class = "img" src="henryl.PNG" width="172" height ="260" alt="Henry standing with arms folded."/></a>
+        </figure>   
+        <h2 class="About">About</h2>
+        <p> I am a PhD student with the <em>Henriques</em> group at <strong>TRI</strong>, developing peptide inhibitors for drug resistant melanoma</p>
+        <br>
+        <!--Skills section-->
+        <h3 id="skills">Skills </h3>
+        <h4>Research skills</h4>
+            <ul class="list">
+                <li>Data analysis</li>
+                <li>Literature mining and reviews</li>
+                <li>Research posters and reports</li>
+                <li>Managing research projects</li>
+            </ul>
+        <h4>Interpersonal skills</h4>
+            <ul class="list"> 
+                <li>Presenting data in groups</li>
+                <li>Working as part of a larger research team</li>
+                <li>Communication skills in social situations</li>
+            </ul>
+        <h4>Technical skillls</h4>    
+            <ul class="list">
+               <li>Molecular biology: qPCR, SDS-PAGE and Western blot</li>
+               <li>Tissue culture and managing cancer cell lines</li>
+               <li>Cytotoxicity, cell proliferation, 2D cell migration assays</li>
+               <li>Recombinant protein expression and purification</li>  
+            </ul>
+        </div>
+        <!--Accomplishment section-->
+        <div class="accomplishmentsection">
+        <h2 id="Accomplishments"> Accomplishments </h2>
+        <table>
+          <tr>
+            <th scope="col">Publications</th>
+              <th>Awards</th>
+              <th scope="col">Presentations</th>
+          </tr>
+          <tr>
+              <td></td>
+              <td></td>
+            <td>2019 School of Biomedical science postgraduate symposium</td>
+          </tr>  
+        </table>
+        </div>
+        <!--Contact section-->
+        <div id="contactsection">
+        <h2 id="Contact" class= "contactform">Contact </h2>
+        <a href="https://www.linkedin.com/in/henry-lamb-bb3791139/" target="_blank"> linkedin</a>
+        <form>
+            <label for ="name">*Please fill in your name:</label>
+            <br>
+            <input type="text" name ="name-text-field" id="name"required>
+            <br>
+            <br>
+            <label for="email">*Email:</label>
+            <br>
+            <input type="text", name="email", id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"required>
+            <br>
+            <br>
+            <label for="mobile">Mobile (optional):</label>
+            <br>
+            <input type="tel", name="mobile" id="mobile" pattern ="[0-9]{10,16}".>
+            <br>
+            <br>
+            <label for ="textarea">*Leave me a paragraph below:</label>
+            <br>
+            <textarea id="message" name ="message" rows="5" cols="30"required>
+            </textarea>
+            <br>
+            <br>
+            <input type="submit">
+        </form>
+        </div>
+    </main>
+    <script src="./nav.js"></script>
+    </body>
+</html>
